@@ -15,7 +15,6 @@ def txt_to_var(file):
     File.close()
     return _table
 
-
 class AnimalFood(object):
     def __init__(self, name,url, animal):
         self.name = name
@@ -42,7 +41,7 @@ def scrap_food(_url):
 
 table = txt_to_var(txt)
 
-food0001 = scrap_food(table[0])
+food0001 = scrap_food(table[55])
 print(food0001)
 
 
