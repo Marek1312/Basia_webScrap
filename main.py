@@ -15,33 +15,41 @@ def txt_to_var(file):
     File.close()
     return _table
 
+
 class AnimalFood(object):
-    def __init__(self, name,url, animal):
-        self.name = name
+    def __init__(self, url):
         self.url = url
-        self.animal = animal
+        self.soup = BeautifulSoup(urllib.request.urlopen(self.url), 'html.parser')
+        self.get_name()
+
+
     def __str__(self):
-        return ' Karma: %s \n Przeznaczenie: %s \n url: %s' %(self.name, self.animal, self.url)
+        return ' Karma: %s \n url: %s' %(self.name, self.url)
 
-
-def scrap_food(_url):
-    # url to soup object
-    soup = BeautifulSoup(urllib.request.urlopen(_url), 'html.parser')
-    def get_name(soup):
+    def get_name(self):
         try:
-            name_box = soup.find('h1', attrs={'class': 'producttitle'})
+            name_box = self.soup.find('h1', attrs={'class': 'producttitle'})
             _name = name_box.text.strip()  # strip() is used to remove starting and trailing
+            self.name = _name
         except:
             return
         return _name
-    food = AnimalFood(name = get_name(soup), url = _url, animal = "cat")
 
-    return food
+    def get_price(self):
+        prices = self.soup.findAll('div', attrs={'class': 'clearfix product__offer '})
+        x = {}
+        for price in prices:
+            x.update({(price.find('div', attrs={'class': 'product__varianttitle'})).text[0:120].strip():
+                          (price.find('span', attrs={'class': 'price__amount'})).text.strip()})
+        return x
 
 
+### main frame ###
 table = txt_to_var(txt)
 
-food0001 = scrap_food(table[55])
-print(food0001)
+food1 = AnimalFood(table[55])
+
+
+
 
 
