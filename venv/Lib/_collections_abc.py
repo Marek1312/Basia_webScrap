@@ -908,8 +908,7 @@ class Sequence(Reversible, Collection):
         i = start
         while stop is None or i < stop:
             try:
-                v = self[i]
-                if v is value or v == value:
+                if self[i] == value:
                     return i
             except IndexError:
                 break
@@ -918,7 +917,7 @@ class Sequence(Reversible, Collection):
 
     def count(self, value):
         'S.count(value) -> integer -- return number of occurrences of value'
-        return sum(1 for v in self if v is value or v == value)
+        return sum(1 for v in self if v == value)
 
 Sequence.register(tuple)
 Sequence.register(str)

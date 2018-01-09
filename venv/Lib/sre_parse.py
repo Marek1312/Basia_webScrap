@@ -404,7 +404,7 @@ def _escape(source, escape, state):
         pass
     raise source.error("bad escape %s" % escape, len(escape))
 
-def _parse_sub(source, state, verbose, nested):
+def _parse_sub(source, state, verbose, nested=True):
     # parse an alternation: a|b|c
 
     items = []
@@ -412,8 +412,7 @@ def _parse_sub(source, state, verbose, nested):
     sourcematch = source.match
     start = source.tell()
     while True:
-        itemsappend(_parse(source, state, verbose, nested + 1,
-                           not nested and not items))
+        itemsappend(_parse(source, state, verbose))
         if not sourcematch("|"):
             break
 
@@ -455,10 +454,10 @@ def _parse_sub(source, state, verbose, nested):
     subpattern.append((BRANCH, (None, items)))
     return subpattern
 
-def _parse_sub_cond(source, state, condgroup, verbose, nested):
-    item_yes = _parse(source, state, verbose, nested + 1)
+def _parse_sub_cond(source, state, condgroup, verbose):
+    item_yes = _parse(source, state, verbose)
     if source.match("|"):
-        item_no = _parse(source, state, verbose, nested + 1)
+        item_no = _parse(source, state, verbose)
         if source.next == "|":
             raise source.error("conditional backref with more than two branches")
     else:
@@ -467,7 +466,7 @@ def _parse_sub_cond(source, state, condgroup, verbose, nested):
     subpattern.append((GROUPREF_EXISTS, (condgroup, item_yes, item_no)))
     return subpattern
 
-def _parse(source, state, verbose, nested, first=False):
+def _parse(source, state, verbose):
     # parse a simple pattern
     subpattern = SubPattern(state)
 
@@ -693,7 +692,7 @@ def _parse(source, state, verbose, nested, first=False):
                         lookbehindgroups = state.lookbehindgroups
                         if lookbehindgroups is None:
                             state.lookbehindgroups = state.groups
-                    p = _parse_sub(source, state, verbose, nested + 1)
+                    p = _parse_sub(source, state, verbose)
                     if dir < 0:
                         if lookbehindgroups is None:
                             state.lookbehindgroups = None
@@ -731,19 +730,18 @@ def _parse(source, state, verbose, nested, first=False):
                     state.checklookbehindgroup(condgroup, source)
                 elif char in FLAGS or char == "-":
                     # flags
+                    pos = source.pos
                     flags = _parse_flags(source, state, char)
                     if flags is None:  # global flags
-                        if not first or subpattern:
+                        if pos != 3:  # "(?x"
                             import warnings
                             warnings.warn(
-                                'Flags not at the start of the expression %r%s' % (
+                                'Flags not at the start of the expression %s%s' % (
                                     source.string[:20],  # truncate long regexes
                                     ' (truncated)' if len(source.string) > 20 else '',
                                 ),
-                                DeprecationWarning, stacklevel=nested + 6
+                                DeprecationWarning, stacklevel=7
                             )
-                        if (state.flags & SRE_FLAG_VERBOSE) and not verbose:
-                            raise Verbose
                         continue
                     add_flags, del_flags = flags
                     group = None
@@ -758,11 +756,11 @@ def _parse(source, state, verbose, nested, first=False):
                 except error as err:
                     raise source.error(err.msg, len(name) + 1) from None
             if condgroup:
-                p = _parse_sub_cond(source, state, condgroup, verbose, nested + 1)
+                p = _parse_sub_cond(source, state, condgroup, verbose)
             else:
                 sub_verbose = ((verbose or (add_flags & SRE_FLAG_VERBOSE)) and
                                not (del_flags & SRE_FLAG_VERBOSE))
-                p = _parse_sub(source, state, sub_verbose, nested + 1)
+                p = _parse_sub(source, state, sub_verbose)
             if not source.match(")"):
                 raise source.error("missing ), unterminated subpattern",
                                    source.tell() - start)
@@ -797,6 +795,9 @@ def _parse_flags(source, state, char):
                 msg = "unknown flag" if char.isalpha() else "missing -, : or )"
                 raise source.error(msg, len(char))
     if char == ")":
+        if ((add_flags & SRE_FLAG_VERBOSE) and
+            not (state.flags & SRE_FLAG_VERBOSE)):
+            raise Verbose
         state.flags |= add_flags
         return None
     if add_flags & GLOBAL_FLAGS:
@@ -852,7 +853,7 @@ def parse(str, flags=0, pattern=None):
     pattern.str = str
 
     try:
-        p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, 0)
+        p = _parse_sub(source, pattern, flags & SRE_FLAG_VERBOSE, False)
     except Verbose:
         # the VERBOSE flag was switched on inside the pattern.  to be
         # on the safe side, we'll parse the whole thing again...
@@ -860,7 +861,7 @@ def parse(str, flags=0, pattern=None):
         pattern.flags = flags | SRE_FLAG_VERBOSE
         pattern.str = str
         source.seek(0)
-        p = _parse_sub(source, pattern, True, 0)
+        p = _parse_sub(source, pattern, True, False)
 
     p.pattern.flags = fix_flags(str, p.pattern.flags)
 

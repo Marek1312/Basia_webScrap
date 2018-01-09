@@ -290,23 +290,21 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         PyObject **values,
         PyObject *kwnames);
 
-    /* Convert (args, nargs, kwargs: dict) into (stack, nargs, kwnames: tuple).
+    /* Convert (args, nargs, kwargs) into a (stack, nargs, kwnames).
 
-       Return 0 on success, raise an exception and return -1 on error.
-
-       Write the new stack into *p_stack. If *p_stack is differen than args, it
-       must be released by PyMem_Free().
+       Return a new stack which should be released by PyMem_Free(), or return
+       args unchanged if kwargs is NULL or an empty dictionary.
 
        The stack uses borrowed references.
 
        The type of keyword keys is not checked, these checks should be done
-       later (ex: _PyArg_ParseStackAndKeywords). */
-    PyAPI_FUNC(int) _PyStack_UnpackDict(
+       later (ex: _PyArg_ParseStack). */
+    PyAPI_FUNC(PyObject **) _PyStack_UnpackDict(
         PyObject **args,
         Py_ssize_t nargs,
         PyObject *kwargs,
-        PyObject ***p_stack,
-        PyObject **p_kwnames);
+        PyObject **kwnames,
+        PyObject *func);
 
     /* Call the callable object func with the "fast call" calling convention:
        args is a C array for positional arguments (nargs is the number of

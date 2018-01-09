@@ -133,4 +133,9 @@
 #include "fileutils.h"
 #include "pyfpe.h"
 
+/* 'Fix' breakage reported at https://bugs.python.org/issue29943 */
+#if PY_VERSION_HEX < 0x03070000 && defined(PySlice_GetIndicesEx)
+#undef PySlice_GetIndicesEx
+#endif
+
 #endif /* !Py_PYTHON_H */

@@ -1,1 +1,1 @@
-C:\Anaconda
+C:\Users\jasko\AppData\Local\Continuum\Anaconda3
