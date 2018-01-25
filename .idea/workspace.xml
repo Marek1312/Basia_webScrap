@@ -2,46 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76418bba-38ba-4224-a1ad-9689c14b863b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Marek.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/funcs.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/start.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/tools.py" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/web_scrap.iml" afterPath="$PROJECT_DIR$/.idea/web_scrap.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/main.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/output2.txt" afterPath="$PROJECT_DIR$/output2.txt" />
+      <change beforePath="$PROJECT_DIR$/funcs.py" afterPath="$PROJECT_DIR$/funcs.py" />
+      <change beforePath="$PROJECT_DIR$/start.py" afterPath="$PROJECT_DIR$/start.py" />
       <change beforePath="$PROJECT_DIR$/tests.ipynb" afterPath="$PROJECT_DIR$/tests.ipynb" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/Python.h" afterPath="$PROJECT_DIR$/venv/Include/Python.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/abstract.h" afterPath="$PROJECT_DIR$/venv/Include/abstract.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/ceval.h" afterPath="$PROJECT_DIR$/venv/Include/ceval.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/fileutils.h" afterPath="$PROJECT_DIR$/venv/Include/fileutils.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/patchlevel.h" afterPath="$PROJECT_DIR$/venv/Include/patchlevel.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/pystate.h" afterPath="$PROJECT_DIR$/venv/Include/pystate.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/sip.h" afterPath="$PROJECT_DIR$/venv/Include/sip.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/sliceobject.h" afterPath="$PROJECT_DIR$/venv/Include/sliceobject.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Include/unicodeobject.h" afterPath="$PROJECT_DIR$/venv/Include/unicodeobject.h" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/_collections_abc.py" afterPath="$PROJECT_DIR$/venv/Lib/_collections_abc.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/abc.py" afterPath="$PROJECT_DIR$/venv/Lib/abc.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/importlib/__init__.py" afterPath="$PROJECT_DIR$/venv/Lib/importlib/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/orig-prefix.txt" afterPath="$PROJECT_DIR$/venv/Lib/orig-prefix.txt" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pip-9.0.1.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-38.4.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-38.4.0.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/wheel-0.30.0.dist-info/RECORD" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/wheel-0.30.0.dist-info/RECORD" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/sre_constants.py" afterPath="$PROJECT_DIR$/venv/Lib/sre_constants.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/sre_parse.py" afterPath="$PROJECT_DIR$/venv/Lib/sre_parse.py" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" afterPath="$PROJECT_DIR$/venv/Scripts/activate" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-3.6.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" afterPath="$PROJECT_DIR$/venv/Scripts/pip.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.6.exe" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.6.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/python.exe" afterPath="$PROJECT_DIR$/venv/Scripts/python.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/python36.dll" afterPath="$PROJECT_DIR$/venv/Scripts/python36.dll" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" afterPath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/wheel.exe" afterPath="$PROJECT_DIR$/venv/Scripts/wheel.exe" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" />
-      <change beforePath="$PROJECT_DIR$/venv/tcl/tk8.6/pkgIndex.tcl" afterPath="$PROJECT_DIR$/venv/tcl/tk8.6/pkgIndex.tcl" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,39 +22,48 @@
       <file leaf-file-name="start.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="989">
+              <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
               <folding>
                 <element signature="e#1#18#0" expanded="true" />
-                <element signature="e#76#275#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="funcs.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="funcs.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/funcs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="48" column="103" lean-forward="false" selection-start-line="48" selection-start-column="103" selection-end-line="48" selection-end-column="103" />
+            <state relative-caret-position="841">
+              <caret line="40" column="60" lean-forward="false" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
-                <element signature="e#393#465#0" expanded="false" />
-                <element signature="e#493#568#0" expanded="false" />
-                <element signature="e#598#910#0" expanded="false" />
-                <element signature="e#937#1001#0" expanded="false" />
-                <element signature="e#1027#1121#0" expanded="false" />
-                <element signature="e#1379#1720#0" expanded="false" />
+                <element signature="e#689#742#0" expanded="false" />
+                <element signature="e#775#847#0" expanded="false" />
+                <element signature="e#875#950#0" expanded="false" />
+                <element signature="e#977#999#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tools.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="14" column="76" lean-forward="false" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+              <folding>
+                <element signature="e#95#463#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="5" />
+              <selected id="0" />
             </state>
           </provider>
         </entry>
@@ -118,15 +94,15 @@
       <list>
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/start_data.py" />
-        <option value="$PROJECT_DIR$/tools.py" />
-        <option value="$PROJECT_DIR$/funcs.py" />
         <option value="$PROJECT_DIR$/output2.txt" />
+        <option value="$PROJECT_DIR$/tools.py" />
         <option value="$PROJECT_DIR$/start.py" />
+        <option value="$PROJECT_DIR$/funcs.py" />
         <option value="$PROJECT_DIR$/tests.ipynb" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="1466" />
     <option name="height" value="1047" />
@@ -166,24 +142,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
+      <pane id="ProjectPane">
+        <subPane>
           <expand>
             <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="web_scrap" type="cbb8eebc:String" user="web_scrap" />
+              <item name="Basia_webScrap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basia_webScrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Basia_webScrap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Basia_webScrap" type="462c0819:PsiDirectoryNode" />
+              <item name="obj" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <expand>
             <path>
-              <item name="web_scrap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_scrap" type="462c0819:PsiDirectoryNode" />
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="web_scrap" type="cbb8eebc:String" user="web_scrap" />
             </path>
           </expand>
           <select />
@@ -212,7 +193,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.start">
+  <component name="RunManager" selected="Jupyter Notebook.web_scrap">
     <configuration name="funcs" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -448,14 +429,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1466" height="1047" extended-state="0" />
+    <frame x="-13" y="-13" width="3226" height="1766" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12689655" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.181875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3315565" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33119383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -480,7 +462,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -513,20 +495,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1374619077/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="809" column="8" lean-forward="false" selection-start-line="809" selection-start-column="8" selection-end-line="809" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1374619077/builtins.py" />
     <entry file="file://$PROJECT_DIR$/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -566,20 +541,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1374619077/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="809" column="8" lean-forward="false" selection-start-line="809" selection-start-column="8" selection-end-line="809" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1374619077/builtins.py" />
     <entry file="file://$PROJECT_DIR$/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -619,20 +587,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1374619077/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="809" column="8" lean-forward="false" selection-start-line="809" selection-start-column="8" selection-end-line="809" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2017.3/system/python_stubs/1374619077/builtins.py" />
     <entry file="file://$PROJECT_DIR$/start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -643,7 +604,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -654,7 +614,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -708,7 +667,6 @@
           <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -755,7 +713,6 @@
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -766,7 +723,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,7 +733,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -825,45 +780,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools.py" />
     <entry file="file://$PROJECT_DIR$/output2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="38" column="81" lean-forward="false" selection-start-line="38" selection-start-column="81" selection-end-line="38" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/funcs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="48" column="103" lean-forward="false" selection-start-line="48" selection-start-column="103" selection-end-line="48" selection-end-column="103" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <element signature="e#393#465#0" expanded="false" />
-            <element signature="e#493#568#0" expanded="false" />
-            <element signature="e#598#910#0" expanded="false" />
-            <element signature="e#937#1001#0" expanded="false" />
-            <element signature="e#1027#1121#0" expanded="false" />
-            <element signature="e#1379#1720#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#18#0" expanded="true" />
-            <element signature="e#76#275#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="920">
+          <caret line="60" column="68" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="60" selection-end-column="68" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="5" />
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="989">
+          <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="e#1#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="14" column="76" lean-forward="false" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
+          <folding>
+            <element signature="e#95#463#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="40" column="60" lean-forward="false" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#689#742#0" expanded="false" />
+            <element signature="e#775#847#0" expanded="false" />
+            <element signature="e#875#950#0" expanded="false" />
+            <element signature="e#977#999#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
